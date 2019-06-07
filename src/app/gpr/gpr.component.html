@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row" style="margin: 1em;top:1em">
+    <h2> GPR SENSOR DATA</h2>
+  </div>
+  <div class="row" class="header">
+          <div class="col-sm-6">
+            <p> 
+                GPR (Ground Penetrating Radar) is the general term applied to techniques which employ radio waves, 
+                typically in the 1 to 1000 MHz frequency range, to map structures and features buried in the ground 
+                (or in man-made structures). 
+            </p>
+            <p>
+                Ground Penetrating Radar works by emitting a pulse into the ground and 
+                recording the echoes that result from subsurface objects.
+            </p>
+          </div>
+          <div class="col-sm-2">
+              <img class="img-responsive" style=" height: 25em;width: 30em;" [src]=about>
+          </div>
+      
+  </div>
+
+  <div class="row  sensorboxcontainer" *ngFor="let images of imagesarray; let idx = index;">
+    <div class="col-sm-4" *ngFor="let image of images">
+      <div class="sensorbox"> 
+          <div class="container">
+            <img class="img-responsive img" [src]=image> 
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="
+        margin: 3em 0em;
+        float: right;
+        width: 100%;">
+    <div class="col-sm-8"> </div>
+    <div class="col-sm-4">
+        <button class="butn" (click)="goBackToHomePage()"> Back To Home </button>
+    </div>
+  </div>
+</div>

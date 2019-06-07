@@ -1,0 +1,40 @@
+
+<div style="background-color: #e9e3e3; height: auto;;">
+  <div style="width: 80%;    margin: 0px auto; outline: none;">
+      <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+              <img [src]="images[0]" alt="Random first slide" style="height:700px" class="responsiveimage">
+              <div class="carousel-caption">
+              <h3 class="firstslide">First slide label</h3>
+              <p class="firstslide">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+          </ng-template>
+          <ng-template ngbSlide>
+              <img [src]="images[1]" alt="Random second slide" style="height:700px" class="responsiveimage">
+              <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </ng-template>
+          <ng-template ngbSlide>
+              <img [src]="images[2]" alt="Random third slide" style="height:700px" class="responsiveimage">
+              <div class="carousel-caption">
+              <h3 class="thirdslide">Third slide label</h3>
+              <p class="thirdslide">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+          </ng-template>
+          <ng-template ngbSlide>
+              <img [src]="images[3]" alt="Random third slide" style="height:700px" class="responsiveimage">
+              <div class="carousel-caption">
+              <h3 class="fourthslide">Fourth slide label</h3>
+              <p class="fourthslide">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+          </ng-template>
+      </ngb-carousel>
+  </div>
+  
+  <div style="height:40em;">
+      <app-sensor> </app-sensor>
+  </div>
+</div>
+
